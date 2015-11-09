@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>查看已报名数据</title>
+</head>
+<body>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <h1>已报名参会人员信息</h1>
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>时间</th>
+                <th>人名</th>
+                <th>推荐人</th>
+                <th>手机</th>
+                <th>邮箱</th>
+                <th>公司</th>
+                <th>人数</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo" key="k" empty="暂时没有数据">
+                <tr>
+                    <td >{$vo.id}</td>
+                    <td >{$vo.time} </td>
+                    <td >{$vo.name} </td>
+                    <td >{$vo.referee} </td>
+                    <td >{$vo.phone} </td>
+                    <td >{$vo.email} </td>
+                    <td >{$vo.company} </td>
+                    <td >{$vo.personnel} </td>
+                </tr>
+            </volist>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="result page">{$page}</div>
+
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="__PUBLIC__/bootstra/js/bootstrap.min.js"></script>
+
+</body>
+</html>

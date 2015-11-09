@@ -1,0 +1,125 @@
+*
+{
+    font-family: Î¢ÈíÑÅºÚ;
+}
+
+#section1
+{
+    background-color: #fff181;
+    overflow: hidden;
+}
+
+#divTop
+{
+    text-align: center;
+    opacity: 0;
+}
+#divBottom
+{
+    height: 400px;
+}
+
+#imgLogo
+{
+    width: 100px;
+    height: 62px;
+}
+
+#line1
+{
+    font-size: 30px;
+    color: #af3f27;
+    font-weight:bold;
+}
+
+#line2
+{
+    font-size: 30px;
+    color: #af412a;
+}
+
+#imgSun
+{
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    bottom: 0%;
+    margin-bottom: -100px;
+}
+
+#section1Bk
+{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+}
+
+#imgSyrup
+{
+    width: 70px;
+    height: 219px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 180px;
+    opacity: 0;
+}
+
+#section2
+{
+    background-color: #d9dd49;
+    text-align: center;
+}
+
+#section2Bk
+{
+    width: 300px;
+    height: 176px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+/*#section2 #p1*/
+/*{*/
+    /*font-size: 80px;*/
+    /*color: #fffa9c;*/
+    /*font-weight:bold;*/
+    /*position: absolute;*/
+    /*right: -100%;*/
+    /*text-align: center;*/
+    /*top: 50px;*/
+    /*width: 100%;*/
+/*}*/
+
+/*#section2 #p2, #p3, #p4*/
+/*{*/
+    /*font-size: 30px;*/
+    /*color: #FFFFFF;*/
+    /*right: -100%;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+/*}*/
+
+/*#section2 #p2*/
+/*{*/
+    /*top: 100px;*/
+/*}*/
+/*#section2 #p3*/
+/*{*/
+    /*top: 150px;*/
+/*}*/
+/*#section2 #p4*/
+/*{*/
+    /*top: 200px;*/
+/*}*/
+
+#s3Bk
+{
+    width: auto;
+    height: auto;
+}

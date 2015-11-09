@@ -1,0 +1,58 @@
+
+body
+{
+    color: #FFFFFF;
+    font-family: Î¢ÈíÑÅºÚ;
+    background-color: #eeae4d;
+}
+
+#shareImage
+{
+    background-image: url("../Images/Nutry/logo.png");
+    width: 100px;
+    height: 62px;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#title
+{
+    background-image: url("../Images/Nutry/signup_titile.png");
+    width: 250px;
+    height: 68px;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#divBody
+{
+    width: 90%;
+    background-color: #1a2024;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+#divBodyA
+{
+    padding: 15px;
+    background-color: #2f383d;
+    border-radius: 10px;
+}
+
+#btnSubmit
+{
+    background-image: url("../Images/Nutry/btn_submit.png");
+    width: 130px;
+    height: 43px;
+    /*background: url("../Images/Nutry/btn_submit.png");*/
+    border: none;
+}

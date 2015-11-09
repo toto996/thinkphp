@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/signup.css" rel="stylesheet">
+
+    <title>优特丽纯天然果汁品鉴会</title>
+</head>
+<body>
+    <div id="divTop">
+        <div id="shareImage"></div>
+        <div id="title"></div>
+        <br>
+    </div>
+
+
+    <div id="divBody">
+        <div id="divBodyA">
+            <form role="form" action="{:U('Signup/signup')}" method="post" id="signupForm">
+                <input type="text" class="form-control" name="username" id="username" placeholder="姓名">
+                <br>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="手机">
+                <br>
+                <input type="text" class="form-control" name="email" id="email" placeholder="邮箱">
+                <br>
+                <input type="text" class="form-control" name="company" id="company" placeholder="公司（个人报名可不填）">
+                <br>
+                <input type="text" class="form-control" name="personnel" id="personnel" placeholder="参会人数">
+                <br>
+                <input type="text" class="form-control" name="referee" id="referee" placeholder="推荐人（自主报名可不填）">
+                <br>
+                <div align="center">
+                    <button type="submit" id="btnSubmit"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div align="center">
+        <img src="__PUBLIC__/Images/Nutry/shadow.png" width="300px" height="43px">
+    </div>
+    <!--<div id="divShadow"></div>-->
+
+    <script src="__PUBLIC__/Js/jquery.js"></script>
+    <script src="__PUBLIC__/Js/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/Js/jquery-validation/dist/localization/messages_zh.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $().ready(function(){
+
+            $("#signupForm").validate({
+                rules:{
+                    username:{
+                        required:true,
+                        maxlength: 64
+                    },
+                    referee:{
+                        maxlength: 64
+                    },
+                    phone:{
+                        required:true,
+                        maxlength:11,
+                        minlength:11
+                    },
+                    email:{
+                        email:true,
+                        maxlength:64,
+                        required:true
+                    },
+                    company:{
+                        maxlength:64
+                    },
+                    personnel:{
+                        maxlength:64,
+                        digits:true
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
